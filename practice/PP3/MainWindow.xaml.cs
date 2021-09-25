@@ -27,6 +27,7 @@ namespace PP3
 
         private void btb_Click(object sender, RoutedEventArgs e)
         {
+            //setting the textbox 
             double pp = 0;
             string manufacturer = txtM.Text;
             string image = txtI.Text;
@@ -35,19 +36,19 @@ namespace PP3
 
             if (string.IsNullOrEmpty(manufacturer)==true)
             {
-                Console.WriteLine("that is an invalid manufacturer");
+                MessageBox.Show("that is an invalid manufacturer");
             }
             if (string.IsNullOrEmpty(name) == true)
             {
-                Console.WriteLine("that is an invalid manufacturer");
+               MessageBox.Show("that is an invalid manufacturer");
             }
             if (string.IsNullOrEmpty(image) == true)
             {
-                Console.WriteLine("that is an invalid image");
+                MessageBox.Show("that is an invalid image");
             }
             if (double.TryParse(price,out pp)==false)
             {
-                Console.WriteLine("that is an invalid price");
+                MessageBox.Show("that is an invalid price");
 
             }
 
@@ -58,7 +59,7 @@ namespace PP3
                 Image = image,
                 Price = pp
             };
-            lstbox.Items.Add(List) //addings items to the listbox
+            lstbox.Items.Add(List);//addings items to the listbox
         }
 
    

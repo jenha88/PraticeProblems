@@ -27,6 +27,7 @@ namespace PP2
         
         private void btbsort_Click(object sender, RoutedEventArgs e)
         {
+            //setting the textbox and clearing once its press again 
             string word = txtbox.Text;
             vList.Items.Clear();
             cList.Items.Clear();
@@ -43,7 +44,7 @@ namespace PP2
                 }
             }
 
-            txtbox.Clear();
+            txtbox.Clear(); //once the word is sort the text box is clear
         }
 
      

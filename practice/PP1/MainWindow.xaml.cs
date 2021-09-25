@@ -37,7 +37,7 @@ namespace PP1
             int years = age.Days / 365;
 
             labOut.Content = $"Hello there {first}! You're {years.ToString("G0")}!";//return 
-            labOut.Visibility = Visibility.Visible;
+            labOut.Visibility = Visibility.Visible; // once the user input the answer the output would be visable 
 
         }
     }

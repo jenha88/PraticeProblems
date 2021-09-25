@@ -22,6 +22,7 @@
         <TextBox x:Name="txtB" HorizontalAlignment="Left" Height="23" Margin="198,251,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btb" Content="Push" HorizontalAlignment="Left" Margin="215,304,0,0" VerticalAlignment="Top" Width="103" Height="32" FontSize="20" Click="btb_Click"/>
         <Label x:Name="labOut" HorizontalAlignment="Left" Margin="461,161,0,0" VerticalAlignment="Top" Height="175" Width="263" Background="#FF90ACD0" FontSize="15"/>
+        
 
     </Grid>
 </Window>
