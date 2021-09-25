@@ -15,11 +15,11 @@ namespace PP4
     
         public Contact(string data)
         {
-
-            FirstName = "";
-            LastName = "";
-            Email = "";
-            Photo = "";
+            var file = data.Split('|');
+            FirstName = file[1];
+            LastName = file[2];
+            Email = file[3];
+            Photo = file[4];
 
         }
 

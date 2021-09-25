@@ -25,17 +25,29 @@ namespace PP4
         public MainWindow()
         {
             InitializeComponent();
-            var lines = File.ReadAllLines("contact.txt.").Skip(1);
+            var lines = File.ReadAllLines("contacts.txt.").Skip(1);
             foreach (var item in lines)
             {
-                CC.Add(new Contact(item));
+                CC.Add(new Contact(item)); //adding items to the list 
             }
+
+            foreach (var cc in CC) //adding items to the list box
+            {
+                lstBox.Items.Add(cc);
+            }
+
         }
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string first = txtF.Text;
-            string last = txtL.Text;
+            Contact selectedcontact = (Contact)lstBox.SelectedItem;
+            var uri = new Uri(selectedcontact.Photo);
+            var img = new BitmapImage(uri);
+            imgBox.Source = img;
+
+            txtF.Text = selectedcontact.FirstName;
+            txtL.Text = selectedcontact.LastName;
+            txtE.Text = selectedcontact.Email;
         }
     }
 }
