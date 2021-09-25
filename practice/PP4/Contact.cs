@@ -13,8 +13,9 @@ namespace PP4
         public string Email { get; set; }
         public string Photo { get; set; }
     
-        public Contact()
+        public Contact(string data)
         {
+
             FirstName = "";
             LastName = "";
             Email = "";
