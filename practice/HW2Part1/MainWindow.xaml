@@ -7,6 +7,41 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://i.pinimg.com/originals/8c/74/70/8c74702522ec08400f0b61876eb34c48.jpg"/>
+
+        </Grid.Background>
+        <Label Content="University of Oklahoma " HorizontalAlignment="Left" Margin="190,14,0,0" VerticalAlignment="Top" Height="67" Width="407" FontSize="48" FontFamily="Vladimir Script"/>
+        <Label Content="First name" HorizontalAlignment="Left" Margin="46,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="48,118,0,0" VerticalAlignment="Top"/>
+        <Label Content="Major" HorizontalAlignment="Left" Margin="48,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.562"/>
+        <Label Content="Cummulative &#xD;&#xA;GPA" HorizontalAlignment="Left" Margin="42,180,0,0" VerticalAlignment="Top"/>
+        <Label Content="Street Number" HorizontalAlignment="Left" Margin="44,226,0,0" VerticalAlignment="Top"/>
+        <Label Content="State" HorizontalAlignment="Left" Margin="45,284,0,0" VerticalAlignment="Top"/>
+        <Label Content="City" HorizontalAlignment="Left" Margin="49,316,0,0" VerticalAlignment="Top"/>
+        <Label Content="Street Name" HorizontalAlignment="Left" Margin="44,256,0,0" VerticalAlignment="Top"/>
+        <Label Content="ZipCode" HorizontalAlignment="Left" Margin="47,344,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="FName" HorizontalAlignment="Left" Height="23" Margin="139,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="LName" HorizontalAlignment="Left" Height="23" Margin="139,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MajBox" HorizontalAlignment="Left" Height="23" Margin="139,157,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="GPABox" HorizontalAlignment="Left" Height="23" Margin="141,191,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="StNum" HorizontalAlignment="Left" Height="23" Margin="141,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="StrtNam" HorizontalAlignment="Left" Height="23" Margin="141,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="StateNam" HorizontalAlignment="Left" Height="23" Margin="139,287,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="CityName" HorizontalAlignment="Left" Height="23" Margin="141,317,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="ZipBox" HorizontalAlignment="Left" Height="23" Margin="141,347,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Congratulation Graduates" HorizontalAlignment="Left" Margin="294,61,0,0" VerticalAlignment="Top" Width="186" FontFamily="Kunstler Script" FontSize="22" Height="42"/>
+        <Button x:Name="btb" Content="Submit" HorizontalAlignment="Left" Margin="602,355,0,0" VerticalAlignment="Top" Width="75" Click="btb_Click"/>
+        <ListBox x:Name="HandOut" HorizontalAlignment="Left" Height="241" Margin="286,93,0,0" VerticalAlignment="Top" Width="474" RenderTransformOrigin="0.5,0.5">
+            <ListBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </ListBox.RenderTransform>
+        </ListBox>
         
     </Grid>
 </Window>

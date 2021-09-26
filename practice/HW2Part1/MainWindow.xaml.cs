@@ -24,5 +24,51 @@ namespace HW2Part1
         {
             InitializeComponent();
         }
+
+        private void btb_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (string.IsNullOrEmpty(FName.Text) == true)
+            {
+                MessageBox.Show("That is an invalid first name");
+            }
+            if (string.IsNullOrEmpty(LName.Text) == true)
+            {
+                MessageBox.Show("That is an invalid last name");
+            }
+            if (string.IsNullOrEmpty(MajBox.Text) == true)
+            {
+                MessageBox.Show("That is an invalid major name");
+            }
+            double gpa=0;
+            if (double.TryParse(GPABox.Text, out gpa) == false)
+            {
+                MessageBox.Show("that is an invalid gpa");
+            }
+            int streetnum=0;
+            if (int.TryParse(StNum.Text, out streetnum) == false)
+            {
+                MessageBox.Show("that is an invalid streetnum");
+            }
+            if (string.IsNullOrEmpty(StrtNam.Text) == true)
+            {
+                MessageBox.Show("that is an invalid street name");
+
+            }
+            if (string.IsNullOrEmpty(StateNam.Text)==true)
+            {
+                MessageBox.Show("that is an invalid state name ");
+            }
+            if (string.IsNullOrEmpty(CityName.Text)==true)
+            {
+                MessageBox.Show("that is an invalid city");
+            }
+            int zip=0;
+            if (int.TryParse(ZipBox.Text,out zip)==false)
+            {
+                MessageBox.Show("that is an invalid zipcode");
+            }
+    
+        }
     }
 }

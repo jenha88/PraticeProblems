@@ -15,6 +15,7 @@ namespace PP4
     
         public Contact(string data)
         {
+            //reading the file in the constructor 
             var file = data.Split('|');
             FirstName = file[1];
             LastName = file[2];
