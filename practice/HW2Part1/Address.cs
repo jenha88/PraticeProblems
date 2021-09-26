@@ -14,7 +14,7 @@ namespace HW2Part1
         public string City {get;set;}
         public int ZipCode{get;set;}
 
-        public Address()
+        public Address() //default constructor 
         {
             StreetNum = 0;
             StreetNam = "";
@@ -23,7 +23,7 @@ namespace HW2Part1
             ZipCode = 0;
 
         }
-        public Address(int streetnumber,string streetname, string state, string city, int zipcode)
+        public Address(int streetnumber,string streetname, string state, string city, int zipcode) //setting the constructor to pass the information
         {
             streetnumber = StreetNum;
             streetname = StreetNam;
@@ -31,5 +31,6 @@ namespace HW2Part1
             city = City;
             zipcode = ZipCode;
         }
+
     } 
 }

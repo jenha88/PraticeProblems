@@ -68,7 +68,21 @@ namespace HW2Part1
             {
                 MessageBox.Show("that is an invalid zipcode");
             }
-    
+
+            //DON'T FORGET TO SET THE CONSTRUCTOR! 
+            Student S = new Student()
+            {
+                FirstNam = FName.Text,
+                LastNam = LName.Text,
+                Major = MajBox.Text,
+                GPA = gpa,
+
+            };
+
+            S.SetAddress(streetnum, StrtNam.Text, StateNam.Text, CityName.Text, zip);
+            HandOut.Items.Add(S);
         }
+        
+
     }
 }
