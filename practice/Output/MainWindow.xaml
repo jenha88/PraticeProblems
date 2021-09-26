@@ -14,11 +14,11 @@
         <Label Content="Country" HorizontalAlignment="Left" Margin="339,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.592" FontSize="30"/>
         <Label Content="Language" HorizontalAlignment="Left" Margin="601,90,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.592" FontSize="30"/>
         <Label Content="TV Show Data" HorizontalAlignment="Left" Margin="297,29,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.494,0.592" FontSize="30"/>
-        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="192" Margin="0,228,-0.4,0" VerticalAlignment="Top" Width="794" Background="#FFEED8D8"/>
+        <ListBox x:Name="lstBox" HorizontalAlignment="Left" Height="192" Margin="0,228,-0.4,0" VerticalAlignment="Top" Width="794" Background="#FFEED8D8" SelectionChanged="lstBox_SelectionChanged"/>
         <ComboBox x:Name="RBox" HorizontalAlignment="Left" Margin="28,140,0,0" VerticalAlignment="Top" Width="177" Height="29"/>
         <ComboBox x:Name="Cbox" HorizontalAlignment="Left" Margin="315,140,0,0" VerticalAlignment="Top" Width="177" Height="29"/>
         <ComboBox x:Name="LBox" HorizontalAlignment="Left" Margin="581,145,0,0" VerticalAlignment="Top" Width="177" Height="29"/>
-        <Button x:Name="Push" Content="Rest" HorizontalAlignment="Left" Margin="581,49,0,0" VerticalAlignment="Top" Width="75" FontSize="20"/>
+        <Button x:Name="Push" Content="Rest" HorizontalAlignment="Left" Margin="581,49,0,0" VerticalAlignment="Top" Width="75" FontSize="20" Click="Push_Click"/>
 
     </Grid>
 </Window>

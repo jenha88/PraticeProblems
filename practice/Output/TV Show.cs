@@ -30,11 +30,59 @@ namespace Output
 
         public TV_Show()
         {
-            Actors = "";
-            Awards = "";
+            Actors = string.Empty;
+            Awards = string.Empty;
+            Country = string.Empty;
+            Director = string.Empty;
+            Genre = string.Empty;
+            Language = string.Empty;
+            Plot = string.Empty;
+            Poster = string.Empty;
+            Rated = string.Empty;
+            Released = string.Empty;
+            RuntimeInMinutes = string.Empty;
+            Title = string.Empty;
+            Type = string.Empty;
+            Writer = string.Empty;
+            Year = string.Empty;
+            imdbID = string.Empty;
+            imdbRating = string.Empty;
+            imdbVotes = string.Empty;
+            totalSeasons = string.Empty;
 
 
-    }
+        }
+
+        public TV_Show(string data)
+        {
+            var files = data.Split('\t');
+            Actors = files[1];
+            Awards = files[2];
+            Country = files[3];
+            Director = files[4];
+            Genre = files[5];
+            Language = files[6];
+            Plot = files[7];
+            Poster = files[8];
+            Rated = files[9];
+            Released = files[10];
+            RuntimeInMinutes = files[11];
+            Title = files[12];
+            Type = files[13];
+            Writer = files[14];
+            Year = files[15];
+            imdbID = files[16];
+            imdbRating = files[17];
+            imdbVotes = files[18];
+            totalSeasons = files[19];
+
+
+        }
+        public override string ToString()
+        {
+            return $"{Title} is rated {Rated} vailable in {Country} in {Language} languages";
+        }
+
     }
    
 }
